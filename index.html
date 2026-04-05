@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BEAUTIFUL MOM'S Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="assets/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="intro-screen">
+        <div class="floating-hearts">
+            <span>❤️</span><span>💖</span><span>💕</span><span>❤️</span><span>💖</span><span>💕</span><span>❤️</span><span>💖</span>
+        </div>
+        <div class="floating-sparkles">
+            <span>✨</span><span>💖</span><span>✨</span><span>💕</span><span>✨</span>
+        </div>
+        <div class="intro-content">
+            <h1 id="typing-text"></h1>
+            <div id="countdown">YOUR BIRTHDAY IN: <span id="time-left"></span></div>
+            <button id="enter-btn" class="glow-btn">ENTER YOUR 48 YEARS JOURNEY MAMU ❤️</button>
+        </div>
+    </div>
+
+    <!-- Main Site -->
+    <div id="main-site" class="main-site hidden">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle">Switch to Dark Theme 🌙</button>
+
+        <!-- Flipbook Container -->
+        <div class="book-container">
+            <div class="book">
+                <!-- Page 1 -->
+                <div class="page page-1 active">
+                    <div class="page-content">
+                        <h2>How YOUR THE BEST MOM</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page1"></div>
+                        </div>
+                        <img src="assets/images/page1.jpg" alt="mamu" class="page-image">
+                        <p>"आमा, मेरो जीवनमा तपाईं जस्तो माया गर्ने आमा पाउनु मेरो लागि सबैभन्दा ठूलो कुरा हो। तपाईं नभएको भए आज मेरो जीवन कस्तो हुन्थ्यो होला, म कल्पना पनि गर्न सक्दिनँ। जीवनमा बाबाको गालीबाट बचाउने तपाईं नै हो, आमा। मेरा सबै गल्तीहरू बिर्सेर मलाई फेरि फेरि मौका दिने पनि तपाईं नै हो। त्यसैले तपाईं मेरो लागि संसारकै सबैभन्दा राम्रो आमा हुनुहुन्छ। ❤️" :).</p>
+                    </div>
+                </div>
+                <!-- Page 2 -->
+                <div class="page page-2">
+                    <div class="page-content">
+                        <h2>Why You Are So Special</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page2"></div>
+                        </div>
+                        <img src="assets/images/page2.jpg" alt="mamu" class="page-image">
+                  <p> "मेरो आमा विशेष हुनुहुन्छ किनभने उहाँले मलाई निस्वार्थ माया गर्नुहुन्छ। मेरो हरेक खुशी र दुखमा सधैं मेरो साथ दिनुहुन्छ। म गलत बाटोमा जाँदा सच्याउनुहुन्छ र सही बाटो देखाउनुहुन्छ। मेरो सानो सफलता पनि ठूलो जस्तो मानेर खुशी हुनुहुन्छ। मेरो लागि आफ्ना सपना र खुशीहरू पनि त्याग्न तयार हुनुहुन्छ। त्यसैले मेरो आमा मेरो जीवनको सबैभन्दा महत्वपूर्ण र विशेष व्यक्ति हुनुहुन्छ। ❤️".</p>
+                    </div>
+                </div>
+                <!-- Page 3 -->
+                <div class="page page-3">
+                    <div class="page-content">
+                        <h2>“हजुरको जीवन”</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page3"></div>
+                        </div>
+                        <img src="assets/images/page3.jpg" alt="mamu" class="page-image">
+                        <ul>
+                            <li>Your infectious laugh that brightens any room.</li>
+                            <li>"हजुरको जीवन मेरो लागि प्रेरणा हो।".</li>
+                            <li>"हजुरको जीवन माया, त्याग र संघर्षले भरिएको छ।".</li>
+                            <li>"हजुरको जीवनले मलाई सही बाटो हिँड्न सिकाएको छ।".</li>
+                            <li>"हजुरको जीवन बिना मेरो जीवन अधुरो छ।".</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Page 4 -->
+                <div class="page page-4">
+                    <div class="page-content">
+                        <h2>संसारकै सबैभन्दा राम्रो आमाको लागि एउटा सुन्दर कविता</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page4"></div>
+                        </div>
+                        <img src="assets/images/page4.jpg" alt="mamu" class="page-image">
+                        <p class="poem">
+                            आमा तिमी माया को सागर,,<br>
+                            तिमी बिना जीवन अँध्यारो।
+.<br>
+                           मेरो हाँसो तिमी नै हौ,,<br>
+                            मेरो संसार तिमी नै हौ।.<br>
+                            तिमीले दिएको माया अमूल्य छ,,<br>
+                            तिमी मेरो जीवनको सबैभन्दा ठूलो शक्ति हौ। ❤️.<br>
+                          
+                        </p>
+                    </div>
+                </div>
+                <!-- Page 5 -->
+                <div class="page page-5">
+                    <div class="page-content">
+                        <h2>Our मेरो जीवनको कारण</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page5"></div>
+                        </div>
+                        <img src="assets/images/page5.jpg" alt="mamu" class="page-image">
+                        <p>I dream of waking up next to you every morning, building a life filled with love, laughter, and endless possibilities. From cozy evenings by the fire to grand adventures around the world, our future is a canvas waiting to be painted with our shared dreams. I can't wait to make memories with you forever.</p>
+                    </div>
+                </div>
+                <!-- Page 6 -->
+                <div class="page page-6">
+                    <div class="page-content">
+                        <h2>Memories of Our First Date</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page6"></div>
+                        </div>
+                        <img src="assets/images/page6.jpg" alt="mamu" class="page-image">
+                        <p>"मेरो जीवनको साँचो कारण हजुरको माया हो, जसले मलाई हरेक दिन अगाडि बढ्न हिम्मत दिन्छ। ❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 7 -->
+                <div class="page page-7">
+                    <div class="page-content">
+                        <h2>तिम्रो मुस्कानले मेरो संसार उज्यालो पार्छ आमा</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page7"></div>
+                        </div>
+                        <img src="assets/images/page7.jpg" alt="mamu" class="page-image">
+                        <p>"आमा, हजुरको मुस्कानले मेरो दिन नै राम्रो बनाउँछ।"
+"हजुर हाँस्दा मेरो मन पनि खुसी हुन्छ, आमा।"
+"हजुरको मुस्कान मेरो लागि सबैभन्दा ठूलो खुशी हो।"
+"आमा, हजुरको मुस्कानले मेरो जीवन उज्यालो बनाउँछ।"
+"हजुरको हाँसोले मेरो सबै दुःख हराउँछ।"
+"आमा, हजुरको मुस्कान देख्दा म सबै कुरा बिर्सिन्छु।"
+"हजुर हाँस्दा मलाई जीवन झन् सुन्दर लाग्छ।"
+"आमा, हजुरको मुस्कान मेरो शक्ति हो। ❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 8 -->
+                <div class="page page-8">
+                    <div class="page-content">
+                        <h2>तिम्रो छोरा अब ठीक हुनेछ।</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page8"></div>
+                        </div>
+                        <img src="assets/images/page8.jpg" alt="mamu" class="page-image">
+                        <p>"आमा, अब हजुरको छोरो साँच्चै सुधारिनेछ र चुरोट सधैंका लागि छोड्नेछ।"
+"अब म परिवर्तन हुँदैछु आमा, चुरोट छोडेर पढाइमा ध्यान दिनेछु।"
+"हजुरको गर्व बन्नेछु आमा, अब चुरोट छोडेर राम्रो बाटोमा हिँड्नेछु।"
+"आमा, अब म गल्तीहरू छोड्दै राम्रो भविष्यतर्फ अगाडि बढ्दैछु।"
+"हजुरको सपना पूरा गर्न अब म मेहनत गर्नेछु र पढाइमा ध्यान दिनेछु।"
+"अब हजुरलाई दुख दिने बानीहरू छोडेर राम्रो छोरो बन्नेछु।"
+"आमा, अब म बदलिएको छु—चुरोट छोड्दैछु र आफ्नो जीवन सुधार्दैछु।"
+"अब मेरो लक्ष्य स्पष्ट छ आमा, चुरोट छोडेर सफल बन्नेछु। ❤️".</p>
+                    </div>
+                </div>
+                <!-- Page 9 -->
+                <div class="page page-9">
+                    <div class="page-content">
+                        <h2>हजुर को दुख हारु मामु/h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page9"></div>
+                        </div>
+                        <img src="assets/images/page9.jpg" alt="mamu" class="page-image">
+                        <p>आमा, जन्मदिनको हार्दिक शुभकामना ❤️ तपाईं मेरो जीवनको सबैभन्दा ठूलो आशीर्वाद र मेरो संसारको उज्यालो हुनुहुन्छ। तपाईंको माया बिना म अधुरो छु, तपाईंको काख नै मेरो सबैभन्दा सुरक्षित ठाउँ हो। आज तपाईंको जन्मदिनमा म केही मात्र भन्न चाहन्छु – तपाईंलाई सधैंभरि यति नै माया गर्छु र सम्मान गर्छु, सधैं स्वस्थ, खुसी र मुस्कुराइरहनुहोस् मेरी प्यारी आमा। धन्यवाद कि तपाईं मेरो आमा हुनुहुन्छ।
+(यो एकै पटकमा छोटो तर मीठो र भावुक छ। यदि अझ छोटो वा अलि फरक बनाउनु पर्छ भने भन्नुहोस्!) 🎂.</p>
+                    </div>
+                </div>
+                <!-- Page 10 -->
+                <div class="page page-10">
+                    <div class="page-content">
+                        <h2>अब हजुर को आउने जीवन</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page10"></div>
+                        </div>
+                        <img src="assets/images/page10.jpg" alt="mamu" class="page-image">
+                        <p>आमा, 
+
+आज तपाईंको जन्मदिनको यो विशेष दिनमा म एउटा कुरा मनमनै प्रार्थना गर्दछु — आउने जीवनमा तपाईंलाई कहिल्यै दुःख नहोस्। तपाईंले सधैं हाँसो र शान्तिसँग बाँच्नुहोस्। तपाईंको छोरा र छोरीले भविष्यमा राम्रो प्रगति गरेर तपाईंको मुहारमा सधैं गर्व र खुशी ल्याउने छन् भन्ने मेरो विश्वास छ। 
+
+तपाईंको स्वास्थ्य, सुख र दीर्घायुको कामना गर्दै जन्मदिनको हार्दिक शुभकामना! ❤️
+
+(यो छोटो अनुच्छेद तपाईंको आमालाई जन्मदिनको शुभकामनास्वरूप लेख्न सक्नुहुन्छ।).</p>
+                    </div>
+                </div>
+                <!-- Page 11 -->
+                <div class="page page-11">
+                    <div class="page-content">
+                        <h2>हाम्रो सानो देखि को यात्रा</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page11"></div>
+                        </div>
+                        <img src="assets/images/page11.jpg" alt="mamu" class="page-image">
+                        <p>जनमेदेखि आजसम्म तपाईंले मलाई कहिल्यै कुनै कुराको कमी हुन दिनुभएन। तपाईंको माया, त्याग र मेहनतले नै म आज यो ठाउँमा छु। म तपाईंको हरेक आँसु पुछ्ने र तपाईंले गरेको सबै परिश्रमको सार्थकता प्रमाणित गर्ने प्रतिज्ञा गर्दछु, आमा। तपाईं सधैं खुसी र गर्व गर्न लायक हुनुहोस्।
+जन्मदिनको हार्दिक शुभकामना! ❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 12 -->
+                <div class="page page-12">
+                    <div class="page-content">
+                        <h2>हजुरको शंगारक्ष</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page12"></div>
+                        </div>
+                        <img src="assets/images/page12.jpg" alt="mamu" class="page-image">
+                        <p>जनमेदेखि आजसम्म तपाईंले मलाई कहिल्यै कुनै कुराको कमी हुन दिनुभएन। तपाईंको अथक संघर्ष, त्याग र माया नै मेरो जीवनको सबैभन्दा ठूलो सम्पत्ति हो। म तपाईंको हरेक आँसु पुछ्ने र तपाईंले गरेको सबै परिश्रम र संघर्षको सार्थकता देखाउने प्रतिज्ञा गर्दछु, आमा। तपाईं सधैं खुसी र गर्व गर्न लायक हुनुहोस्।
+जन्मदिनको हार्दिक शुभकामना! ❤️</p>
+                    </div>
+                </div>
+                <!-- Page 13 -->
+                <div class="page page-13">
+                    <div class="page-content">
+                        <h2>हजुर रा बाबा</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page13"></div>
+                        </div>
+                        <img src="assets/images/page13.jpg" alt="mamu" class="page-image">
+                        <p>जनमेदेखि आजसम्म तपाईं र बाबाले मलाई कहिल्यै कुनै कुराको कमी हुन दिनुभएन। तपाईं दुवैको अथक संघर्ष, त्याग, माया र परिश्रमले नै म आज यो ठाउँमा छु। म तपाईं दुवैको हरेक आँसु पुछ्ने र तपाईंहरूले गरेको सबै मेहनत र संघर्षको सार्थकता प्रमाणित गर्ने प्रतिज्ञा गर्दछु। तपाईंहरू सधैं खुसी र गर्व गर्न लायक हुनुहोस्।
+जन्मदिनको हार्दिक शुभकामना! ❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 14 -->
+                <div class="page page-14">
+                    <div class="page-content">
+                        <h2>मा रामरो हुन मा हजुर को करण</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page14"></div>
+                        </div>
+                        <img src="assets/images/page14.jpg" alt="mamu" class="page-image">
+                        <p>जनमेदेखि आजसम्म तपाईं र बाबाले मलाई कहिल्यै कुनै कुराको कमी हुन दिनुभएन। तपाईं दुवैको अथक संघर्ष, त्याग र मायाले नै म आज यो ठाउँमा छु। म राम्रो हुनुको सबै कारण तपाईं दुवै हुनुहुन्छ। म तपाईंहरूको हरेक आँसु पुछ्ने र तपाईंहरूले गरेको सबै परिश्रम र संघर्षको सार्थकता देखाउने प्रतिज्ञा गर्दछु। तपाईंहरू सधैं खुसी र गर्व गर्न लायक हुनुहोस्।
+जन्मदिनको हार्दिक शुभकामना! ❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 15 -->
+                <div class="page page-15">
+                    <div class="page-content">
+                        <h2>हजुर को माया मेरो मन मा</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page15"></div>
+                        </div>
+                        <img src="assets/images/page15.jpg" alt="mamu" class="page-image">
+                        <p>"हजुरको माया मेरो मनमा सधैं फुलिरहने फूल हो, जन्मदिनको धेरै धेरै शुभकामना आमालाई 💖"
+यो एक लाइनमा नै छ, छोटो, मिठो र भावुक छ।
+आमालाई जन्मदिनको हार्दिक शुभकामना! 🎂❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 16 -->
+                <div class="page page-16">
+                    <div class="page-content">
+                        <h2>हजुर को साथ लिए मेरो भविष्य</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page16"></div>
+                        </div>
+                        <img src="assets/images/page16.jpg" alt="mamu" class="page-image">
+                        <p>."हजुरको साथले मेरो भविष्य उज्यालो बनेको छ, जन्मदिनको हार्दिक शुभकामना आमालाई 💖"
+यो एकदम छोटो, भावुक र एक लाइनमा नै छ।
+आमालाई जन्मदिनको धेरै माया र शुभकामना! 🎂❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 17 -->
+                <div class="page page-17">
+                    <div class="page-content">
+                        <h2>हजुर र बाबा को दुख र सुख</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page17"></div>
+                        </div>
+                        <img src="assets/images/page17.jpg" alt="mamu" class="page-image">
+                        <p>.एउटै छोटो र भावुक लाइन:
+"हजुर र बाबाको सँगैको दुःखले मेरो जीवन बलियो बनायो, जन्मदिनको हार्दिक शुभकामना आमालाई 💖"
+यो एक लाइनमा नै छ, छोटो र गहिरो भाव छ।
+आमालाई जन्मदिनको धेरै माया! 🎂❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 18 -->
+                <div class="page page-18">
+                    <div class="page-content">
+                        <h2>मेरो आमा</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page18"></div>
+                        </div>
+                        <img src="assets/images/page18.jpg" alt="mamu" class="page-image">
+                        <p>एउटै छोटो र सुन्दर लाइन आमाको लागि:
+
+"हजुर र बाबाको सँगैको दुःखले मेरो जीवनलाई बलियो बनायो, जन्मदिनको हार्दिक शुभकामना मेरी आमालाई 💖"
+
+यो एकदम छोटो, भावुक र एक लाइनमा नै छ।  
+
+आमालाई जन्मदिनको धेरै धेरै माया र शुभकामना! 🎂❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 19 -->
+                <div class="page page-19">
+                    <div class="page-content">
+                        <h2>आमा र छोरी को माया</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page19"></div>
+                        </div>
+                        <img src="assets/images/page19.jpg" alt="Continues" class="page-image">
+                        <p>"आमा र छोराको माया संसारको सबैभन्दा पवित्र बन्धन हो, जन्मदिनको हार्दिक शुभकामना मेरी आमालाई 💖"
+यो एक लाइनमा नै छ, छोटो र भावुक छ।
+आमालाई जन्मदिनको धेरै माया! 🎂❤️.</p>
+                    </div>
+                </div>
+                <!-- Page 20 -->
+                <div class="page page-20">
+                    <div class="page-content">
+                        <h2>जन्मदिनको शुभकामना मेरो प्यारो मामु लाई</h2>
+                        <div class="love-meter">
+                            <div class="love-fill" id="love-fill-page20"></div>
+                        </div>
+                        <img src="assets/images/page20.jpg" alt="Forever" class="page-image">
+                        <p>"आमा र छोराको माया मेरो जीवनको सबैभन्दा मीठो उपहार हो, Happy Birthday Mamu 💖"
+यो एक लाइनमा नै छ, छोटो र भावुक छ।
+मामुलाई जन्मदिनको धेरै धेरै माया र शुभकामना! 🎂❤️.</p>
+                        <form id="message-form">
+                            <textarea id="message-input" placeholder="Leave a message for me... ❤️" rows="3"></textarea>
+                            <button type="submit" class="glow-btn">Send</button>
+                        </form>
+                        <p id="message-display"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button id="prev-btn" class="nav-btn prev-btn">Previous</button>
+            <button id="next-btn" class="nav-btn next-btn">Next</button>
+        </div>
+
+        <!-- Surprise Popup (Hidden by default) -->
+<div id="surprise-popup" class="popup hidden">
+    <div class="popup-content">
+        <h2>Happy Birthday Mom! Did you like it? 🎉🎂</h2>
+        <button id="yes-btn" class="glow-btn">YES BABU! I LOVED IT ❤️</button>
+    </div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
